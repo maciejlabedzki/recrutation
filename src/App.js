@@ -1,11 +1,18 @@
 import React from "react";
-import "./styles.css";
+
+// Style
+import "./css/styles.css";
+import "./css/font/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navigation from "./component/Navigation/Navigation.js";
+import Layout from "./component/Layout/Layout.js";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Navigation />
+      <Layout />
     </div>
   );
 }
