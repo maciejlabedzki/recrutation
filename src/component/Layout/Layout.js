@@ -13,20 +13,25 @@ import TotalSales from "../TotalSales/TotalSales.js";
 function Layout({ isLogin, dispatch }) {
   return (
     <Container fluid>
-      <Row>
-        <Col sm="3">
-          {isLogin.login === true && <User />}
-          <Cpu />
-        </Col>
-        <Col sm="6">
-          <TotalSales />
-        </Col>
+      {isLogin.login === true && (
+        <Row>
+          <Col sm="3">
+            <User />
+            <Cpu />
+          </Col>
+          <Col sm="6">
+            <TotalSales />
+          </Col>
 
-        <Col sm="3">
-          {/* {isLogin.login === true && <User />}
-          <Cpu /> */}
-        </Col>
-      </Row>
+          <Col sm="3"></Col>
+        </Row>
+      )}
+
+      {isLogin.login === false && (
+        <Row>
+          <Col sm="12">Please Login</Col>
+        </Row>
+      )}
     </Container>
   );
 }
