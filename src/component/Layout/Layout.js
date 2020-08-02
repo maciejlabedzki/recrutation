@@ -10,12 +10,12 @@ import User from "../User/User.js";
 import Cpu from "../Cpu/Cpu.js";
 import TotalSales from "../TotalSales/TotalSales.js";
 
-function Layout({ dataFetch, dispatch }) {
+function Layout({ isLogin, dispatch }) {
   return (
     <Container fluid>
       <Row>
         <Col sm="3">
-          {dataFetch.loading === true && <User />}
+          {isLogin.login === true && <User />}
           <Cpu />
         </Col>
         <Col sm="6">
@@ -23,7 +23,7 @@ function Layout({ dataFetch, dispatch }) {
         </Col>
 
         <Col sm="3">
-          <User />
+          {isLogin.login === true && <User />}
           <Cpu />
         </Col>
       </Row>
@@ -32,7 +32,7 @@ function Layout({ dataFetch, dispatch }) {
 }
 
 const mapStateToProps = (state) => ({
-  dataFetch: state.dataFetch,
+  isLogin: state.loginStatus,
 });
 
 export default connect(mapStateToProps)(Layout);
