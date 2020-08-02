@@ -13,6 +13,7 @@
   padding: 10px;
   margin: 20px 0px;
   background: #00000080;
+  overflow: hidden;
 }
 
 .justify-text-left {

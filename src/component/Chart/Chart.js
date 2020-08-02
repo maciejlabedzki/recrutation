@@ -69,7 +69,7 @@ export default class Demo extends React.PureComponent {
           />
 
           <Title text="Noisy and Original signals" textComponent={TitleText} />
-          <Legend markerComponent={SpecialMarkerComponent} />
+          {/* <Legend markerComponent={SpecialMarkerComponent} /> */}
         </Chart>
       </div>
     );

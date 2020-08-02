@@ -17,7 +17,7 @@ export default class Navigation extends Component {
       <>
         <Container className="container-module user-modal">
           <Row>
-            <Col xs={6} md={4}>
+            <Col>
               <Image src={imgUser} roundedCircle />
             </Col>
           </Row>

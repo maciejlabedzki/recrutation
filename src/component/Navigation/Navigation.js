@@ -3,7 +3,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-export default class Navigation extends Component {
+class Navigation extends Component {
   render() {
     return (
       <>
@@ -29,9 +29,8 @@ export default class Navigation extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                <span className="icon-user"></span> Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -40,3 +39,5 @@ export default class Navigation extends Component {
     );
   }
 }
+
+export default Navigation;

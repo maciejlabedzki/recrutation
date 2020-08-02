@@ -9,3 +9,10 @@
 .user-modal {
   padding-bottom: 0;
 }
+
+.user-modal img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
