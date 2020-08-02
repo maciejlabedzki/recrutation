@@ -1,0 +1,9 @@
+{
+  "user": {
+    "name": "John",
+    "surname": "Doe",
+    "message": { "unread": 14, "all": 255 },
+    "ballance": 549.99,
+    "cpu": { "core-1": 40, "core-2": 66 }
+  }
+}

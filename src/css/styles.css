@@ -1,7 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg2.png");
   background-size: cover;
   height: 100vh;
 }
@@ -14,8 +14,22 @@
   margin: 20px 0px;
   background: rgb(0 0 0 / 80%);
   overflow: hidden;
+  padding-top: 0;
+  border-radius: 5px;
 }
 
 .justify-text-left {
+  text-align: left;
+}
+
+.justify-text-right {
+  text-align: right;
+}
+
+.container-title {
+  background: #343a40;
+  margin-bottom: 15px;
+  padding: 5px 0px;
+  font-size: 22px;
   text-align: left;
 }

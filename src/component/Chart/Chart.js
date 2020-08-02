@@ -12,6 +12,8 @@ import "@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css
 import NoisySignalIcon from "../../img/noisySignal.png";
 import OriginalSignalIcon from "../../img/originalSignal.png";
 
+import "./ChartStyle.css";
+
 const SpecialMarkerComponent = ({ name, color }) => {
   const Icon = name === "Noisy signal" ? NoisySignalIcon : OriginalSignalIcon;
   // xlinkHref is use for safari
@@ -52,7 +54,7 @@ export default class Demo extends React.PureComponent {
 
     return (
       <div className="card">
-        <Chart data={chartData}>
+        <Chart data={chartData} className="chart-totalsales">
           <ArgumentAxis />
           <ValueAxis />
 
@@ -68,7 +70,7 @@ export default class Demo extends React.PureComponent {
             argumentField="argument"
           />
 
-          <Title text="Noisy and Original signals" textComponent={TitleText} />
+          {/* <Title text="Noisy and Original signals" textComponent={TitleText} /> */}
           {/* <Legend markerComponent={SpecialMarkerComponent} /> */}
         </Chart>
       </div>

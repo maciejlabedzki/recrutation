@@ -1,0 +1,11 @@
+.totalSales .icon-holder {
+  padding: 5px;
+}
+
+.totalSales .point {
+  padding-top: 30px;
+}
+
+.totalSales .point [class*="icon-"] {
+  font-size: 30px;
+}

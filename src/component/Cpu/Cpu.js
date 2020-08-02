@@ -14,14 +14,16 @@ class Cpu extends Component {
   render() {
     return (
       <Container className="container-module">
-        <Row>
+        <Row className="container-title">
           <Col sm>CPU</Col>
-          <Col sm>
+          <Col sm className="justify-text-right">
             <span className="icon-cogs"></span>
           </Col>
         </Row>
         <Row>
-          <Col sm>Intel Core Duo</Col>
+          <Col sm className="describe">
+            Intel Core Duo
+          </Col>
         </Row>
         <Row>
           <Col sm className="justify-text-left">

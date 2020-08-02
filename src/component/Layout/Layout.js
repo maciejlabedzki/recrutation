@@ -23,8 +23,8 @@ function Layout({ isLogin, dispatch }) {
         </Col>
 
         <Col sm="3">
-          {isLogin.login === true && <User />}
-          <Cpu />
+          {/* {isLogin.login === true && <User />}
+          <Cpu /> */}
         </Col>
       </Row>
     </Container>
