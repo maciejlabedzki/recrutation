@@ -18,7 +18,7 @@ import logger from "redux-logger";
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Provider store={store}>
@@ -28,3 +28,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

@@ -2,8 +2,14 @@
   "user": {
     "name": "John",
     "surname": "Doe",
-    "message": { "unread": 14, "all": 255 },
-    "ballance": 549.99,
-    "cpu": { "core-1": 40, "core-2": 66 }
+    "message": { "unread": "10", "all": "123" },
+    "ballance": "564.99",
+    "totalSales": {
+      "percent": "55",
+      "sales": "155",
+      "canceled": "23",
+      "totalIncome": "12.123.121,00"
+    },
+    "cpu": { "core-1": "40", "core-2": "66", "name": "intel core duo" }
   }
 }

@@ -5,8 +5,10 @@ const dataFetch = (
   switch (action.type) {
     case "LOADING":
       return { ...state, loading: true };
+    case "DATA-CLEAR":
+      return { ...state, data: null };
     case "LOADED":
-      return { ...state, loading: true, loaded: true, posts: action.payload };
+      return { ...state, loading: false, loaded: true, data: action.payload };
     case "ERROR":
       return { ...state, loading: false, error: action.payload };
     default:

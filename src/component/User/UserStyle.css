@@ -1,5 +1,6 @@
 .user-listgroup {
   color: black;
+  cursor: pointer;
 }
 
 .user-listgroup-wrapper {
@@ -15,4 +16,9 @@
   height: 150px;
   margin: 0 auto;
   display: block;
+}
+
+.button-hover:hover {
+  background: #2a2b2c;
+  color: white;
 }

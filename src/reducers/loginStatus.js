@@ -1,4 +1,4 @@
-const loginStatus = (state = { login: true }, action) => {
+const loginStatus = (state = { login: false }, action) => {
   switch (action.type) {
     case "LOGIN":
       return { ...state, login: true };

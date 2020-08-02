@@ -8,10 +8,24 @@ import Nav from "react-bootstrap/Nav";
 
 function Navigation({ isLogin, dispatch }) {
   const handleLogin = () => {
-    dispatch({ type: "LOGIN" });
+    dispatch({ type: "LOADING" });
+
+    fetch("http://localhost:3333/user")
+      .then((response) => response.json())
+      .then((jsonData) => {
+        console.log(jsonData);
+        dispatch({ type: "LOADED", payload: jsonData });
+        dispatch({ type: "PAGE-ALL" });
+        dispatch({ type: "LOGIN" });
+        dispatch({ type: "ERROR", payload: null });
+      })
+      .catch((err) => {
+        dispatch({ type: "ERROR", payload: err });
+      });
   };
 
   const handleLogout = () => {
+    dispatch({ type: "DATA-CLEAR" });
     dispatch({ type: "LOGOUT" });
   };
 
